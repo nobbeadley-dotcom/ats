@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpa Feirão 2026 | Portal de Recuperação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700;900&family=Montserrat:wght@800;900&display=swap');
+        
+        :root {
+            --crimson: #991b1b;
+            --dark-slate: #0f172a;
+            --gold-accent: #fbbf24;
+            --soft-white: #f8fafc;
+            --glass-bg: rgba(15, 23, 42, 0.95);
+        }
+
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: var(--dark-slate);
+            color: var(--soft-white);
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Fundo Dinâmico Carmesim */
+        .bg-crimson-gradient {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 10% 10%, rgba(153, 27, 27, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(251, 191, 36, 0.05) 0%, transparent 40%);
+            z-index: -1;
+        }
+
+        /* Painel "Luxury Glass" */
+        .premium-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(251, 191, 36, 0.1);
+            border-radius: 2rem;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botão Dourado de Alta Conversão */
+        .btn-gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            color: #0f172a;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            border-radius: 0.75rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.4);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 35px -10px rgba(217, 119, 6, 0.6);
+            filter: brightness(1.1);
+        }
+
+        .text-gold {
+            color: var(--gold-accent);
+        }
+
+        .border-crimson {
+            border-color: var(--crimson);
+        }
+
+        .shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(251, 191, 36, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer-effect 3s infinite;
+        }
+
+        @keyframes shimmer-effect {
+            0% { transform: translate(-100%, -100%) rotate(45deg); }
+            100% { transform: translate(100%, 100%) rotate(45deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <div class="bg-crimson-gradient"></div>
+
+    <!-- Header Elegante -->
+    <header class="p-8 md:p-12 flex justify-between items-center max-w-7xl mx-auto w-full relative z-10">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-red-900/40 border border-red-700 rounded-2xl flex items-center justify-center shadow-xl">
+                <svg class="w-7 h-7 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="flex flex-col">
+                <h2 class="font-montserrat font-black text-2xl tracking-tighter text-white leading-none">RENOVA <span class="text-gold">CRÉDITO</span></h2>
+                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.5em] mt-1 italic">Edição Exclusiva 2026</span>
+            </div>
+        </div>
+
+        <div class="hidden sm:block">
+            <span class="px-4 py-1.5 border border-red-900/50 bg-red-950/30 rounded-full text-[10px] font-bold text-red-500 uppercase tracking-widest">
+                ● Acesso Governamental Autorizado
+            </span>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="max-w-4xl w-full">
+            <div class="premium-card p-10 md:p-24 text-center relative overflow-hidden shimmer">
+                
+                <div class="mb-8 flex justify-center">
+                    <span class="text-[11px] font-black text-gold uppercase tracking-[0.4em] bg-amber-500/5 px-6 py-2 rounded-full border border-amber-500/20">
+                        Oportunidade de Limpeza Única
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-8xl font-montserrat font-black mb-8 leading-[0.9] text-white tracking-tighter">
+                    RECUPERE O SEU <br> 
+                    <span class="text-gold">NOME HOJE.</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-2xl mb-14 max-w-2xl mx-auto font-light leading-relaxed">
+                    Obtenha perdão de até <span class="text-white font-bold underline decoration-gold">99% das suas dívidas</span> através do portal oficial de negociação digital.
+                </p>
+
+                <!-- Acção Principal -->
+                <div class="max-w-sm mx-auto mb-16">
+                    <a href="https://atecoacessofeirao.shop/inicio/" 
+                       class="btn-gold w-full py-6 block no-underline text-2xl uppercase font-black tracking-tighter">
+                        CONSULTAR AGORA
+                    </a>
+                    <div class="mt-8 flex items-center justify-center gap-3 opacity-60">
+                        <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-[10px] text-slate-300 font-bold tracking-widest uppercase">Consulta Gratuita e Instantânea</span>
+                    </div>
+                </div>
+
+                <!-- Painel de Benefícios -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-slate-800">
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-white/5">
+                        <p class="text-red-800 text-[9px] font-bold uppercase tracking-widest mb-2">Desconto</p>
+                        <p class="text-2xl font-montserrat font-black text-white">99%</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-white/5">
+                        <p class="text-red-800 text-[9px] font-bold uppercase tracking-widest mb-2">Resposta</p>
+                        <p class="text-2xl font-montserrat font-black text-gold">Imediata</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-white/5">
+                        <p class="text-red-800 text-[9px] font-bold uppercase tracking-widest mb-2">Sigilo</p>
+                        <p class="text-2xl font-montserrat font-black text-white">Total</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-white/5">
+                        <p class="text-red-800 text-[9px] font-bold uppercase tracking-widest mb-2">Segurança</p>
+                        <p class="text-2xl font-montserrat font-black text-white">SSL+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="p-12 border-t border-slate-900 bg-black/40">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                <span class="text-[10px] font-bold text-slate-600 uppercase tracking-[0.4em]">© 2026 RENOVA CRÉDITO DIGITAL</span>
+                <span class="text-[9px] text-slate-800 uppercase tracking-widest mt-1 font-bold">Iniciativa de Recuperação Financeira | Protocolo 774-B</span>
+            </div>
+            
+            <nav class="flex gap-10 text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">
+                <a href="#" class="hover:text-gold transition-colors">Proteção de Dados</a>
+                <a href="#" class="hover:text-gold transition-colors">Termos Oficiais</a>
+                <a href="#" class="hover:text-gold transition-colors">Apoio ao Cidadão</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
